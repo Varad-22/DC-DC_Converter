@@ -32,3 +32,11 @@ Traditional DC-DC converters like buck and boost suffer from limitations such as
 
   3. This topology ensures a non-inverted output voltage and smooth operation.
 
+## TL494 PWM Controller
+
+-The PWM controller is based on the TL494 bootstrapping IC, which can generate PWM signals with variable frequency and duty cycle.
+
+-These PWM signals are used to provide gate pulses to the converters, allowing control of the output voltage (through the duty cycle) and the operation mode (through the frequency).
+
+-The circuit uses the TC4428A MOSFET driver to drive the switching MOSFETs (IRFZ44N) used in the converters.
+
